@@ -17,7 +17,7 @@ from sklearn.model_selection import cross_val_score, KFold
 import optuna
 
 def objective(trial):
-    alpha = trial.suggest_float('alpha', 1e-5, 10.0, log=True)
+    alpha = trial.suggest_float('alpha', 1e-5, 100.0, log=True)
 
     RidgeHyper = RidgeClassifier(alpha=alpha)
 
