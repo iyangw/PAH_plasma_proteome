@@ -31,7 +31,7 @@ def objective(trial):
         "n_estimators": trial.suggest_int("n_estimators", 10, 1000),
         "reg_alpha": trial.suggest_float("reg_alpha", 1e-3, 10),
         "reg_lambda": trial.suggest_float("reg_lambda", 1e-3, 10),
-        "objective": 'binary:logistic',
+        "objective": 'binary:logistic'
     }
 
     if booster == "gbtree" or booster == "dart":
