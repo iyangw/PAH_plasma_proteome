@@ -41,7 +41,7 @@ fpr_test, tpr_test, _ = roc_curve(y_test, y_probs_test)
 auc_test = roc_auc_score(y_test, y_probs_test)
 
 # 绘制ROC曲线
-plt.figure(figsize=(8, 6),dpi=600)
+plt.figure(figsize=(8, 6), dpi=600)
 plt.rcParams['font.family'] = ["Arial"]
 plt.plot(fpr_discovery, tpr_discovery, label=f"Discovery Set, AUC={auc_discovery:.4f}")
 plt.plot(fpr_test, tpr_test, label=f"Test Set, AUC={auc_test:.4f}")
