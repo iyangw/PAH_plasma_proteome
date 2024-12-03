@@ -1,8 +1,8 @@
 from matplotlib_venn import venn2, venn2_circles
 import matplotlib.pyplot as plt
 
-Group1 = range(1, 539)
-Group2 = range(46, 619)
+Group1 = range(1, 540)
+Group2 = range(46, 620)
 
 plt.rcParams['font.family'] = ["Arial"]
 fig, ax = plt.subplots(figsize=(10, 10), dpi=600)
